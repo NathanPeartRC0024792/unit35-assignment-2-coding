@@ -178,7 +178,7 @@ namespace Unit_35_Assignment_2
                 series.Points.AddXY(r.time,r.altitude);
             }
             chart1.ChartAreas[0].AxisX.Title = "time /s";
-            chart1.ChartAreas[0].AxisY.Title = "Altiude /m";
+            chart1.ChartAreas[0].AxisY.Title = "Altitude /m";
             chart1.ChartAreas[0].RecalculateAxesScale();
         }
 
@@ -186,7 +186,7 @@ namespace Unit_35_Assignment_2
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             saveFileDialog1.FileName = "";
-            saveFileDialog1.Filter = "csv Files|*. csv";
+            saveFileDialog1.Filter = "csv Files|*.csv";
             DialogResult results = saveFileDialog1.ShowDialog();
             if (results == DialogResult.OK)
             {
@@ -212,7 +212,7 @@ namespace Unit_35_Assignment_2
         private void saveAsPNGToolStripMenuItem_Click(object sender, EventArgs e)
         {
             saveFileDialog1.FileName = "";
-            saveFileDialog1.Filter = "png Files|*. png";
+            saveFileDialog1.Filter = "png Files|*.png";
             DialogResult results = saveFileDialog1.ShowDialog();
             if (results == DialogResult.OK)
             {
